@@ -4,12 +4,262 @@
 	<meta charset="UTF-8">
 	<meta
 			name="viewport"
-			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+			content="width=device-width"
 	>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Alexey Kohanovich. CV</title>
+	<link rel="icon" type="image/x-icon" href="assets/ico/favicon_1.svg">
 </head>
 <body>
+
+<header class="header" id="header">
+	<span class="top__span">
+		<button class="top__button">
+			<img src="assets/ico/top-ico.svg" alt="tom-ico" class="top__button__ico ico">
+		</button>
+	</span>
+	<div class="container">
+		<nav class="nav">
+			<span class="theme__toggle">
+				<img src="assets/ico/lm-ico.svg" alt="theme-ico-light" class="theme__button " id="theme__light">
+				<img src="assets/ico/dm-ico.svg" alt="theme-ico-dark" class="theme__button hidden" id="theme__dark">
+
+			</span>
+			
+			<ul class="nav__menu">
+				<li class="nav__item"><a href="#skills" class="nav__link">skills</a></li>
+				<li class="nav__item"><a href="#projects" class="nav__link">projects</a></li>
+				<li class="nav__item"><a href="#education" class="nav__link">education</a></li>
+				<li class="nav__item"><a href="#code-examples" class="nav__link">code examples</a></li>
+				<li class="nav__item"><a href="#contacts" class="nav__link">contacts</a></li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<main>
+	<section class="about">
+		<div class="container">
+			<div class="about__inner">
+				<div class="avatar">
+					<img src="assets/img/avatar.jpg" alt="" class="avatar__img">
+				</div>
+				<h2 class="about__name title">Alexey <span>Kohanovich</span></h2>
+				<h1 class="subtitle">Front-End Developer</h1>
+				<button class="button__email-me">
+					<img src="assets/ico/mailme-ico.svg" alt="mailme-ico" class="mailme-img ico">
+				</button>
+			</div>
+			<p class="about__subscription">
+				Hi! <br> <br> I'm a junior Front-End developer from Belarus. <br>
+				I am currently studying at <br>
+				<span><a href="#education" class="ce_blue">The Rolling Scopes School</a></span>
+				<br>
+				and will soon be ready to perform tasks of any complexity.
+				<br>
+				<br>
+				I also have experience with sound mixing and music production.
+			</p>
+		</div>
+	</section>
+	
+	<section class="skills" id="skills">
+		<div class="container">
+			<h2 class="title">My skills</h2>
+			<ul class="skills__list">
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/html-ico.svg" alt="">
+					<p>HTML</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/css-ico.svg" alt="">
+					<p>CSS (SASS, SCSS)</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/js-ico.svg" alt="">
+					<p>JavaScript</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/figma-ico.svg" alt="">
+					<p>Figma</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/ws-ico.svg" alt="">
+					<p>WebStorm</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/react-ico.svg" alt="">
+					<p>React</p> <span class="ce_blue">(in progress)</span>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/ts-ico.svg" alt="">
+					<p>TypeScript</p> <span class="ce_blue">(in progress)</span>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/api-ico.svg" alt="">
+					<p>Rest API</p> <span class="ce_blue">(in progress)</span>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/lang-ico.svg" alt="">
+					<p>Russian, English</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="projects" id="projects">
+		<div class="container">
+			<h2 class="tittle">My projects</h2>
+			<div class="projects__inner">
+				<div class="pro-block">
+					<a href="https://alexeykoh.github.io/BAZA-415/main/index.html" class="block__pro">
+						<div class="pro-block__wrapper">
+							<img src="assets/img/projects/calc.png" alt="pro-block-img" class="pro-block__ing">
+							<p class="pro-block__title">calculator</p>
+						</div>
+					</a>
+					<p class="pro-block__description">
+						My first project - <span class="ce_blue">Calculator</span>! <br><br>
+						A small, cartoon-like calculator that can calculate simple expressions. It is possible to delete
+						the entered characters by clicking on the calculator screen.
+					</p>
+				</div>
+				<div class="pro-block">
+					<a href="https://alexeykoh.github.io/drums/pages/drums_live/index.html" class="block__pro even">
+						<div class="pro-block__wrapper">
+							<img src="assets/img/projects/drums.png" alt="pro-block-img" class="pro-block__ing">
+							<p class="pro-block__title">drum player</p>
+						</div>
+					</a>
+					<p class="pro-block__description">
+						Ba-dum-tsss!!!<br><br>
+						These are <span class="ce_blue">Drums</span>!<br>
+						You can play your favorite song (not difficult, of course) directly on the site. It is possible
+						to adjust the volume for each drum separately.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="education" id="education">
+		<div class="container">
+			<h2 class="tittle">Education</h2>
+			<ul class="education__list">
+				<li class="education__item">
+					<img src="assets/ico/edu/bru-edu-ico.svg" alt="bru-ico" class="ico">
+					<p>BELARUSIAN-RUSSIAN UNIVERSITY</p></li>
+				<li class="education__item">
+					<img src="assets/ico/edu/rs_school_js.svg" alt="rss-ico" class="ico">
+					<p>The Rolling Scopes</p></li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="code-examples" id="code-examples">
+		<div class="container">
+			<h2 class="tittle">Code examples</h2>
+			<div class="code">
+				<pre class="code-examples__wrapper"><span class="ce_pink">const</span> <span class="ce_white">hamburger</span> <span
+						class="ce_pink"
+				>=</span> <span class="ce_white">document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span
+						class="ce_yel"
+				>('</span><span class="ce_grey">.</span><span class="ce_green">hamburger</span><span class="ce_yel">')</span><span
+						class="ce_grey"
+				>;</span><br><span class="ce_pink">const</span> <span class="ce_white">navMenu</span> <span class="ce_pink">=</span> <span
+						class="ce_white"
+				>document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span class="ce_yel">('</span><span
+						class="ce_grey"
+				>.</span><span class="ce_green">nav__menu</span><span class="ce_yel">')</span><span class="ce_grey">;</span><br><br><span
+						class="ce_white"
+				>hamburger</span><span class="ce_grey">.</span><span class="ce_green">addEventListener</span><span class="ce_yel">('</span><span
+						class="ce_yel"
+				>click</span><span class="ce_yel">'</span><span class="ce_grey">,</span><span class="ce_blue">burger</span><span
+						class="ce_yel"
+				>)</span><br><br><span class="ce_pink">function</span> <span class="ce_blue">burger</span> <span class="ce_yel">(){</span><br>    <span
+						class="ce_white"
+				>hamburger</span><span class="ce_grey">.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span
+						class="ce_green"
+				>toggle</span><span class="ce_yel">('active')</span><span class="ce_grey">;</span><br>    <span class="ce_white">navMenu</span><span
+						class="ce_grey"
+				>.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span class="ce_green">toggle</span><span
+						class="ce_yel"
+				>('active')</span><span class="ce_grey">;</span><br><span class="ce_yel">}</span>
+</pre>
+			</div>
+		</div>
+	</section>
+	
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2 class="tittle">My contacts</h2>
+			<div class="contacts__inner">
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/phone-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>Phone</p>
+					</div>
+					<div class="contact__description">
+						<p>+375255449468</p>
+					</div>
+				</div>
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/adress-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>Address</p>
+					</div>
+					<div class="contact__description"><p>Republic of Belarus. Mogilev</p></div>
+				</div>
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/mail-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>E-mail</p>
+					</div>
+					<div class="contact__description">
+						<a href="mailto:alexeykoh@icloud.com"><p>alexeykoh@icloud.com</p></a>
+					</div>
+				</div>
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/git-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>GitHub</p>
+					</div>
+					<div class="contact__description"><a href="https://github.com/Alexeykoh">alexeykoh</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__block">
+				<a href="https://github.com/Alexeykoh?tab=repositories" class="footer__link">
+					<img src="assets/ico/git-ico.svg" alt="" class="ico">
+				</a>
+			</div>
+			<div class="footer__block">
+				<img src="assets/ico/calendar-ico.svg" alt="" class="footer__img ico">
+				<p>2022</p>
+			</div>
+			<div class="footer__block">
+				<a href="https://rs.school/js/" class="footer__link">
+					<img src="assets/ico/edu/rs_school_js.svg" alt="" class="footer__img ico" id="rss-ico">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="scripts/script.js"></script>
 
 </body>
 </html>

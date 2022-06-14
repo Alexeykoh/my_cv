@@ -1,0 +1,343 @@
+main {
+	section {
+		padding-top    : 100px;
+		padding-bottom : 100px;
+		@include media-mobile {
+			padding-top    : 60px;
+			padding-bottom : 60px;
+		}
+	}
+	
+	//
+	section.about {
+		width            : 100%;
+		background-color : var(--color-secondary);
+		min-height: 80vh;
+		//
+		.container {
+			display         : flex;
+			align-items     : center;
+			justify-content : space-around;
+			row-gap         : 50px;
+			flex-wrap       : wrap;
+		}
+		
+		.about__name {
+			text-align : center;
+		}
+		
+		//
+		.about__inner {
+			display        : flex;
+			flex-direction : column;
+			gap            : 35px;
+			align-items    : center;
+			
+			
+			button {
+				transition : .3s;
+				
+				.hidden__text {
+					font-size : 1.2rem;
+					display   : none;
+					opacity   : 0;
+				}
+				
+				img {
+					width  : 30px;
+					height : auto;
+				}
+			}
+		}
+		
+		//
+		.about__subscription {
+			width : 45%;
+			@include media-laptop {
+				width : 90%;
+			}
+			//
+			@include adaptive-font(32, 16);
+		}
+		
+		//
+		.avatar {
+			width           : 350px;
+			height          : 350px;
+			overflow        : hidden;
+			border-radius   : 50% 50% 60% 40% / 32% 70% 30% 68%;
+			//
+			display         : flex;
+			align-items     : center;
+			justify-content : center;
+			//
+			img.avatar__img {
+				width  : 650px;
+				height : auto;
+			}
+		}
+	}
+	
+	//
+	section.skills {
+		width            : 100%;
+		background-color : var(--color-primary);
+		//
+		.container {
+			//
+			h2 {
+				order : 1;
+				@include media-tablet {
+					order : 0;
+				}
+			}
+			
+			//
+			height          : 100%;
+			display         : flex;
+			align-items     : center;
+			justify-content : space-around;
+			gap             : 50px;
+			flex-wrap       : wrap;
+			//
+			.skills__list {
+				display        : flex;
+				flex-direction : column;
+				gap            : 30px;
+				//
+				.skills__item {
+					font-size   : 2rem;
+					display     : flex;
+					align-items : center;
+					gap         : 15px;
+					//
+					img {
+						width : 50px;
+					}
+				}
+			}
+		}
+	}
+	
+	//
+	section.projects {
+		width            : 100%;
+		background-color : var(--color-secondary);
+		//
+		.container {
+			//
+			//height          : 100%;
+			display         : flex;
+			align-items     : center;
+			justify-content : space-around;
+			column-gap      : 50px;
+			row-gap         : 25px;
+			flex-wrap       : wrap;
+			//
+			.projects__inner {
+				margin-top      : 50px;
+				margin-bottom   : 50px;
+				//
+				display         : flex;
+				flex-direction  : column;
+				align-items     : center;
+				justify-content : center;
+				column-gap      : 150px;
+				row-gap         : 80px;
+				//
+				.pro-block {
+					flex-wrap       : wrap;
+					display         : flex;
+					flex-direction  : row;
+					align-items     : center;
+					justify-content : space-around;
+					//
+					@include media-laptop {
+						flex-direction : column;
+						row-gap        : 20px;
+					}
+					//
+					.block__pro {
+						width : 40%;
+						@include media-laptop {
+							width : 90%;
+						}
+					}
+					
+					.pro-block__description {
+						@include adaptive-font(32, 16);
+						width     : 50%;
+						font-size : 1rem;
+						@include media-tablet {
+							width : 90%;
+						}
+					}
+					
+					//
+					.pro-block__wrapper {
+						position : relative;
+						
+						img {
+							border-radius    : 50px;
+							background-color : var(--color-primary);
+						}
+						
+						//
+						.pro-block__title {
+							position         : absolute;
+							margin           : 0;
+							z-index          : 10;
+							bottom           : 5%;
+							right            : 5%;
+							//
+							@include adaptive-font(24, 12);
+							font-family      : "Kdam Thmor Pro", sans-serif;
+							color            : white;
+							//
+							background-color : var(--color-primary_dark);
+							padding          : 10px 20px 10px 20px;
+							border-radius    : 50px;
+						}
+						
+						//
+					}
+				}
+			}
+		}
+	}
+	
+	//
+	section.education {
+		width            : 100%;
+		background-color : var(--color-primary);
+		//
+		.container {
+			h2 {
+				order : 0;
+			}
+			
+			.education__list {
+				display        : flex;
+				flex-direction : column;
+				gap            : 60px;
+				//
+				.education__item {
+					display        : flex;
+					align-items    : center;
+					flex-direction : column;
+					gap            : 15px;
+					
+					img {
+						width : 100px;
+					}
+					
+					p {
+						font-size  : 2rem;
+						text-align : center;
+					}
+				}
+			}
+			
+			//
+			height          : 100%;
+			display         : flex;
+			align-items     : center;
+			justify-content : space-around;
+			gap             : 50px;
+			flex-wrap       : wrap;
+			//
+		}
+	}
+	
+	//
+	section.code-examples {
+		width            : 100%;
+		background-color : var(--color-secondary);
+		//
+		.container {
+			h2 {
+				order : 1;
+			}
+			
+			//
+			height          : 100%;
+			display         : flex;
+			align-items     : center;
+			justify-content : space-around;
+			gap             : 50px;
+			flex-wrap       : wrap;
+			//
+			@include media-laptop {
+				flex-direction : column;
+				h2 {
+					order : 0;
+				}
+			}
+			//
+			.code {
+				//width : 20%;
+				
+				pre {
+					max-width : 600px;
+					@include adaptive-font(18, 8)
+				}
+				
+				//
+				.code-examples__wrapper {
+					color : var(--code-color);
+				}
+			}
+		}
+	}
+	
+	//
+	section.contacts {
+		width            : 100%;
+		background-color : var(--color-primary);
+		//
+		
+		.container {
+			display         : flex;
+			justify-content : space-around;
+			align-items     : center;
+			height          : 100%;
+			flex-wrap       : wrap;
+			//
+		}
+		
+		h2 {
+			margin-bottom : 2rem;
+		}
+		
+		//
+		.contacts__inner {
+			display         : flex;
+			flex-direction  : column;
+			align-items     : start;
+			justify-content : start;
+			gap             : 20px;
+		}
+		
+		//
+		.contact__wrapper, .contact__title {
+			display     : flex;
+			align-items : center;
+		}
+		
+		.contact__title {
+			gap   : 5px;
+			width : 8rem;
+		}
+		
+		.contact__wrapper {
+			gap : 50px;
+			@include media-mobile {
+				gap : 10px;
+			}
+		}
+		
+		.contact__description {
+			width : 10rem;
+		}
+	}
+}

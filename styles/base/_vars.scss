@@ -1,0 +1,68 @@
+// container
+$cont_max-width     : 1440px;
+$cont_padding-left  : 120px;
+$cont_padding-right : 120px;
+
+$content-width      : 1280px - 1px;
+$tablet-width       : 768px - 1px;
+$mobile-big-width   : 425px - 1px;
+$mobile-small-width : 320px - 1px;
+
+// sizes
+$header_height      : 5.625rem;
+$maxWidth           : 1280;
+
+// =========
+:root {
+	//colors light
+	--text-color         : black;
+	--text-color-hover   : #C34A36;
+	//
+	--color-primary_dark : #4E4637;
+	--color-primary      : #E4CB9D;
+	--color-secondary    : #B4AA99;
+	//
+	--top_btn_color      : #C34A36;
+	--btn_color          : #C34A36;
+	//
+	--code-color         : black;
+	--code-color_bg      : #E4CB9D;
+	
+	// code colors
+	--pnk                : #d1f7fd;
+	--grey               : #3a3a3a;
+	--grn                : #278bad;
+	--yel                : #f3da9c;
+	--wht                : #494949;
+	--blu                : #543fd7;
+}
+
+[data-theme="dark"] {
+	--text-color         : white;
+	//
+	--color-primary_dark : #404046;
+	--color-primary      : #051937;
+	--color-secondary    : #2e2e4d;
+	//
+	--top_btn_color      : #543fd7;
+	--btn_color          : #543fd7;
+	//
+	--code-color         : white;
+	--code-color_bg      : #2c2070;
+	
+	img {
+		fill : white;
+	}
+	
+	img.ico {
+		filter : invert(1)
+	}
+	
+	// code colors
+	--pnk                : #df597f;
+	--grey               : gray;
+	--grn                : #6fbf80;
+	--yel                : #fbe466;
+	--wht                : white;
+	--blu                : #5ad3e5;
+}
