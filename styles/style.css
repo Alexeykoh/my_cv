@@ -11,6 +11,7 @@
   --code-color: black;
   --code-color_bg: #E4CB9D;
   --pnk: #d1f7fd;
+  --pnk_2: rgba(209,247,253, .9);
   --grey: #3a3a3a;
   --grn: #278bad;
   --yel: #f3da9c;
@@ -28,6 +29,7 @@
   --code-color: white;
   --code-color_bg: #2c2070;
   --pnk: #df597f;
+  --pnk_2: rgba(223,89,127, .9);
   --grey: gray;
   --grn: #6fbf80;
   --yel: #fbe466;
@@ -144,6 +146,20 @@ h1, h2, h3, h4, p, li, a, .nav__link {
   font-size: 1rem;
 }
 
+.skill__point {
+  width: 7px;
+  height: 2rem;
+  background: var(--pnk);
+  border-radius: 10px;
+}
+.skill__point:hover {
+  filter: brightness(1.75);
+}
+
+.skill__point.grey {
+  background: grey;
+}
+
 main section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -242,6 +258,9 @@ main section.skills .container .skills__soft {
     order: 0;
   }
 }
+main section.skills .container .skills__soft .soft__wrapper {
+  margin-top: 50px;
+}
 main section.skills .container .skills__soft .soft__wrapper ul {
   transition: 0.4s;
   display: flex;
@@ -259,16 +278,129 @@ main section.skills .container .skills__soft .soft__wrapper ul li {
   gap: 10px;
   flex-wrap: wrap;
 }
-main section.skills .container .skills__soft .soft__wrapper ul li .popup__description {
+main section.skills .container .skills__soft .soft__wrapper ul li .arrow__here {
+  position: absolute;
+  left: -5%;
+  width: 50px;
+  animation: arrow__here 1s ease-in-out infinite;
+}
+@keyframes arrow__here {
+  0% {
+    left: -5%;
+  }
+  50% {
+    left: -10%;
+  }
+  100% {
+    left: -5%;
+  }
+}
+main section.skills .container .skills__soft .soft__wrapper ul li:hover .popup__description {
+  display: block;
+}
+main section.skills .container .skills__soft .soft__wrapper ul li:hover .popup__risochka_1 {
+  display: block;
+}
+main section.skills .container .skills__soft .soft__wrapper ul li:hover .popup__risochka_2 {
+  display: block;
+}
+main section.skills .container .skills__soft .soft__wrapper ul li .popup__risochka_1 {
+  animation: risochka-1 1s ease-in-out infinite;
+  width: 100px;
+  height: 5px;
+  background: var(--pnk);
+  border-radius: 10px;
+  position: absolute;
   transition: 0.4s;
-  top: -30%;
+  bottom: 95%;
+  left: 110px;
+  display: none;
+}
+@keyframes risochka-1 {
+  0% {
+    bottom: 94%;
+  }
+  50% {
+    bottom: 102%;
+  }
+  100% {
+    bottom: 94%;
+  }
+}
+main section.skills .container .skills__soft .soft__wrapper ul li .popup__risochka_2 {
+  animation: risochka-2 1s ease-in-out infinite;
+  width: 40px;
+  height: 5px;
+  background: var(--pnk);
+  border-radius: 10px;
+  position: absolute;
+  transition: 0.4s;
+  bottom: 75%;
+  left: 110px;
+  display: none;
+}
+@keyframes risochka-2 {
+  0% {
+    bottom: 75%;
+  }
+  50% {
+    bottom: 86%;
+  }
+  100% {
+    bottom: 75%;
+  }
+}
+main section.skills .container .skills__soft .soft__wrapper ul li .popup__description {
+  transform: translatey(0px);
+  animation: float2 1s ease-in-out infinite;
+  position: absolute;
+  transition: 0.4s;
+  bottom: 105%;
+  left: 110px;
   width: 320px;
   padding: 15px;
   border-radius: 10px;
   display: none;
   z-index: 10;
-  background: wheat;
+  background: var(--pnk_2);
   color: black;
+}
+@media (max-width: 1550px) {
+  main section.skills .container .skills__soft .soft__wrapper ul li .popup__description {
+    left: -110px;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes float2 {
+  0% {
+    bottom: 110%;
+  }
+  50% {
+    bottom: 115%;
+  }
+  100% {
+    bottom: 110%;
+  }
+}
+@media (max-width: 767px) {
+  main section.skills .container .skills__soft .soft__wrapper ul li .popup__description {
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1280));
+  }
+}
+@media (min-width: 767px) {
+  main section.skills .container .skills__soft .soft__wrapper ul li .popup__description {
+    font-size: calc(12px + 4 * (100vw / 1280));
+  }
 }
 main section.skills .container .skills__soft .soft__wrapper ul li img {
   width: 50px;
@@ -280,16 +412,24 @@ main section.skills .container .skills__soft .soft__wrapper ul li p {
 main section.skills .container .skills__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 main section.skills .container .skills__list .skills__item {
   font-size: 2rem;
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 main section.skills .container .skills__list .skills__item img {
   width: 50px;
+}
+main section.skills .container .skills__list .skills__item p {
+  width: 300px;
+}
+main section.skills .container .skills__list .skills__item ul {
+  display: flex;
+  gap: 10px;
 }
 main section.projects {
   width: 100%;
