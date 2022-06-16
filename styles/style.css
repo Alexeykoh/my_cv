@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 :root {
   --text-color: black;
-  --text-color-hover: #C34A36;
+  --text-color-hover: white;
   --color-primary_dark: #4E4637;
   --color-primary: #E4CB9D;
   --color-secondary: #B4AA99;
@@ -22,6 +22,7 @@
 
 [data-theme=dark] {
   --text-color: white;
+  --text-color-hover: #C34A36;
   --color-primary_dark: #404046;
   --color-primary: #051937;
   --color-secondary: #2e2e4d;
