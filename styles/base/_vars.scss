@@ -16,7 +16,7 @@ $maxWidth           : 1280;
 :root {
 	//colors light
 	--text-color         : black;
-	--text-color-hover   : #C34A36;
+	--text-color-hover   : white;
 	//
 	--color-primary_dark : #4E4637;
 	--color-primary      : #E4CB9D;
@@ -41,6 +41,7 @@ $maxWidth           : 1280;
 
 [data-theme="dark"] {
 	--text-color         : white;
+	--text-color-hover   : #C34A36;
 	//
 	--color-primary_dark : #404046;
 	--color-primary      : #051937;
