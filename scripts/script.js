@@ -95,5 +95,9 @@ function lightTh () {
 }
 
 
+// my age
+let today = new Date();
+let year = today.getFullYear() - 1995;
 
-
+const age = document.getElementById('age')
+age.innerHTML = `${year} y.o. Mogilev. Belarus` ;

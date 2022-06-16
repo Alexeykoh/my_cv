@@ -87,3 +87,20 @@ h2 {
 .even {
 	order : 1
 }
+
+.mail{
+	font-size: 1rem;
+}
+
+.skill__point{
+	width : 7px;
+	height : 2rem;
+	background    : var(--pnk);
+	border-radius: 10px;
+	&:hover{
+		filter: brightness(1.75);
+	}
+}
+.skill__point.grey{
+	background    : grey;
+}
