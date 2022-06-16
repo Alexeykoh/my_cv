@@ -8,10 +8,11 @@
   --color-secondary: #B4AA99;
   --top_btn_color: #C34A36;
   --btn_color: #C34A36;
+  --header_color: rgba(195,74,54,.7);
   --code-color: black;
   --code-color_bg: #E4CB9D;
   --pnk: #d1f7fd;
-  --pnk_2: rgba(209,247,253, .9);
+  --pnk_2: rgba(209, 247, 253, .9);
   --grey: #3a3a3a;
   --grn: #278bad;
   --yel: #f3da9c;
@@ -26,10 +27,11 @@
   --color-secondary: #2e2e4d;
   --top_btn_color: #543fd7;
   --btn_color: #543fd7;
+  --header_color: rgba(84,63,215,.7);
   --code-color: white;
   --code-color_bg: #2c2070;
   --pnk: #df597f;
-  --pnk_2: rgba(223,89,127, .9);
+  --pnk_2: rgba(223, 89, 127, .9);
   --grey: gray;
   --grn: #6fbf80;
   --yel: #fbe466;
@@ -640,7 +642,7 @@ header {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--header_color);
   overflow: hidden;
   z-index: 100;
 }
