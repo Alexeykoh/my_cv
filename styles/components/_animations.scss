@@ -9,6 +9,7 @@
 		bottom : 115%;
 	}
 }
+
 //
 @keyframes risochka-1 {
 	0% {
@@ -21,6 +22,7 @@
 		bottom : 94%;
 	}
 }
+
 //
 @keyframes risochka-2 {
 	0% {
@@ -33,6 +35,7 @@
 		bottom : 75%;
 	}
 }
+
 //
 @keyframes arrow__here {
 	0% {
@@ -45,4 +48,19 @@
 		left : -5%;
 	}
 }
+
+@keyframes speech__bubbles {
+	0% {
+		opacity : 0;
+	}
+	50% {
+		0% {
+			opacity : 0.5;
+		}
+	}
+	100% {
+		opacity : 1;
+	}
+}
+
 //
