@@ -1,0 +1,85 @@
+section.projects {
+	width            : 100%;
+	background-color : var(--color-secondary);
+	//
+	.container {
+		//
+		//height          : 100%;
+		display         : flex;
+		align-items     : center;
+		justify-content : space-around;
+		column-gap      : 50px;
+		row-gap         : 25px;
+		flex-wrap       : wrap;
+		//
+		.projects__inner {
+			margin-top      : 50px;
+			margin-bottom   : 50px;
+			//
+			display         : flex;
+			flex-direction  : column;
+			align-items     : center;
+			justify-content : center;
+			column-gap      : 150px;
+			row-gap         : 80px;
+			//
+			.pro-block {
+				flex-wrap       : wrap;
+				display         : flex;
+				flex-direction  : row;
+				align-items     : center;
+				justify-content : space-around;
+				//
+				@include media-laptop {
+					flex-direction : column;
+					row-gap        : 20px;
+				}
+				//
+				.block__pro {
+					width : 40%;
+					@include media-laptop {
+						width : 90%;
+					}
+				}
+				
+				.pro-block__description {
+					@include adaptive-font(32, 16);
+					width     : 50%;
+					font-size : 1rem;
+					@include media-tablet {
+						width : 90%;
+					}
+				}
+				
+				//
+				.pro-block__wrapper {
+					position : relative;
+					
+					img {
+						border-radius    : 50px;
+						background-color : var(--color-primary);
+					}
+					
+					//
+					.pro-block__title {
+						position         : absolute;
+						margin           : 0;
+						z-index          : 10;
+						bottom           : 5%;
+						right            : 5%;
+						//
+						@include adaptive-font(24, 12);
+						font-family      : "Kdam Thmor Pro", sans-serif;
+						color            : white;
+						//
+						background-color : var(--color-primary_dark);
+						padding          : 10px 20px 10px 20px;
+						border-radius    : 50px;
+					}
+					
+					//
+				}
+			}
+		}
+	}
+}
