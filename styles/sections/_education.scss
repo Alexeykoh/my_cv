@@ -1,0 +1,41 @@
+section.education {
+	width            : 100%;
+	background-color : var(--color-primary);
+	//
+	.container {
+		h2 {
+			order : 0;
+		}
+		
+		.education__list {
+			display        : flex;
+			flex-direction : column;
+			gap            : 60px;
+			//
+			.education__item {
+				display        : flex;
+				align-items    : center;
+				flex-direction : column;
+				gap            : 15px;
+				
+				img {
+					width : 100px;
+				}
+				
+				p {
+					font-size  : 2rem;
+					text-align : center;
+				}
+			}
+		}
+		
+		//
+		height          : 100%;
+		display         : flex;
+		align-items     : center;
+		justify-content : space-around;
+		gap             : 50px;
+		flex-wrap       : wrap;
+		//
+	}
+}

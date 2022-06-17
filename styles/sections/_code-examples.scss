@@ -1,0 +1,39 @@
+section.code-examples {
+	width            : 100%;
+	background-color : var(--color-secondary);
+	//
+	.container {
+		h2 {
+			order : 1;
+		}
+		
+		//
+		height          : 100%;
+		display         : flex;
+		align-items     : center;
+		justify-content : space-around;
+		gap             : 50px;
+		flex-wrap       : wrap;
+		//
+		@include media-laptop {
+			flex-direction : column;
+			h2 {
+				order : 0;
+			}
+		}
+		//
+		.code {
+			//width : 20%;
+			
+			pre {
+				max-width : 600px;
+				@include adaptive-font(18, 8)
+			}
+			
+			//
+			.code-examples__wrapper {
+				color : var(--code-color);
+			}
+		}
+	}
+}

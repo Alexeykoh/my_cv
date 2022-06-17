@@ -7,10 +7,20 @@
 @import "layouts/header";
 @import "layouts/footer";
 
+@import "components/animations";
 @import "components/buttons";
 @import "components/top-button";
 @import "components/burger";
 @import "components/nav";
 @import "components/code-example";
 @import "components/theme-btn";
+//@import "components/hovers";
+@import "components/popup";
 
+
+@import "sections/about";
+@import "sections/code-examples";
+@import "sections/contacts";
+@import "sections/education";
+@import "sections/projects";
+@import "sections/skills";
