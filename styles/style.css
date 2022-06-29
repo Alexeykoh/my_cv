@@ -186,7 +186,7 @@ header {
 }
 
 footer {
-  background-color: var(--color-primary_dark);
+  background-color: var(--color-secondary);
 }
 footer .footer__img {
   width: 50px;
